@@ -1,0 +1,42 @@
+{
+  "id": "works",
+  "label": "works",
+  "format": "custom",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": { "config": { "label": "UID" }, "type": "UID" },
+      "title": {
+        "type": "Text",
+        "config": { "label": "Title", "placeholder": "" }
+      },
+      "cover": {
+        "type": "Image",
+        "config": { "label": "cover", "constraint": {}, "thumbnails": [] }
+      },
+      "status": {
+        "type": "Select",
+        "config": {
+          "label": "status",
+          "placeholder": "",
+          "options": ["Ongoing", "Completed", "Hiatus", "Dropped"],
+          "default_value": "Ongoing"
+        }
+      },
+      "published_date": {
+        "type": "Date",
+        "config": { "label": "published_date", "placeholder": "" }
+      },
+      "isdraft": {
+        "type": "Boolean",
+        "config": {
+          "label": "isDraft",
+          "default_value": false,
+          "placeholder_true": "true",
+          "placeholder_false": "false"
+        }
+      }
+    }
+  }
+}

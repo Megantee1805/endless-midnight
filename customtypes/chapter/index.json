@@ -1,0 +1,46 @@
+{
+  "id": "chapter",
+  "label": "chapter",
+  "format": "custom",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": { "config": { "label": "UID" }, "type": "UID" },
+      "title": {
+        "type": "Text",
+        "config": { "label": "title", "placeholder": "" }
+      },
+      "isdraft": {
+        "type": "Boolean",
+        "config": {
+          "label": "isDraft",
+          "default_value": false,
+          "placeholder_true": "true",
+          "placeholder_false": "false"
+        }
+      },
+      "published_date": {
+        "type": "Timestamp",
+        "config": { "label": "published_date", "placeholder": "" }
+      },
+      "content": {
+        "type": "StructuredText",
+        "config": {
+          "label": "content",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      },
+      "volume": {
+        "type": "Link",
+        "config": {
+          "label": "volume",
+          "select": "document",
+          "customtypes": ["volumes"]
+        }
+      }
+    }
+  }
+}
